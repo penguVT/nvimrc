@@ -11,3 +11,7 @@ vim.keymap.set("n", "<leader>cc", "<cmd>!compiler %:p<cr>")
 vim.keymap.set("n", "<leader>mg", function()
   require("neogit").open()
 end)
+
+-- terminal
+vim.keymap.set("n", "<leader>pt", vim.cmd.term)
+vim.keymap.set("t", "<leader>dt", "<C-\\><C-n><CR>")
