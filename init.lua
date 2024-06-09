@@ -11,8 +11,8 @@ require("lspconfig").rust_analyzer.setup({}) -- requires rust_analyzer binary
 require("lspconfig").clangd.setup({})
 
 -- flutter-tools setup
-require("flutter-tools").setup({})
-require("telescope").load_extension("flutter")
+--require("flutter-tools").setup({})
+--require("telescope").load_extension("flutter")
 
 -- keybinds
 require("pengu.keybinds")
