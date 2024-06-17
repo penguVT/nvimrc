@@ -18,5 +18,10 @@ return {
     masonLspconfig.setup({
       ensure_installed = { "lua_ls", "rust_analyzer", "clangd" },
     })
+
+    -- set up language servers
+    require("lspconfig").lua_ls.setup({})
+    require("lspconfig").rust_analyzer.setup({}) -- requires rust_analyzer binary
+    require("lspconfig").clangd.setup({})
   end,
 }
