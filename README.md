@@ -8,7 +8,7 @@ This is the neovim config I use both on streams and in my daily life. It include
 
 - Live error checking via LSPs ([nvim-lspconfig](https://github.com/neovim/nvim-lspconfig))
 - Programming language integrations for languages like Go ([go.nvim](https://github.com/ray-x/go.nvim))
-- Project navigation via [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)] and Netrw
+- Project navigation via [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) and Netrw
 - Discord RPC / Status ([neocord](https://github.com/IogaMaster/neocord))
 - Gruvbox theming ([gruvbox-material](https://github.com/sainnhe/gruvbox-material))
 
