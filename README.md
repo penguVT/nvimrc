@@ -6,7 +6,7 @@ Pengu's neovim config! As seen on [twitch.tv/pengudev_](https://twitch.tv/pengud
 
 This is the neovim config I use both on streams and in my daily life. It includes plugins for things such as:
 
-- Live syntax error checking via LSPs ([nvim-lspconfig]())
+- Live error checking via LSPs ([nvim-lspconfig]())
 - Programming language integrations for languages like Go ([go.nvim]())
 - Project navigation via [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)] and Netrw
 - Discord RPC / Status ([neocord]())
