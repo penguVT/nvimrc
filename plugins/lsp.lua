@@ -16,12 +16,18 @@ return {
 
     mason.setup()
     masonLspconfig.setup({
-      ensure_installed = { "lua_ls", "rust_analyzer", "clangd" },
+      ensure_installed = {
+        "lua_ls",
+        "rust_analyzer",
+        "clangd",
+        "gopls",
+      },
     })
 
     -- set up language servers
     require("lspconfig").lua_ls.setup({})
     require("lspconfig").rust_analyzer.setup({}) -- requires rust_analyzer binary
     require("lspconfig").clangd.setup({})
+    require("lspconfig").gopls.setup({})         -- requires gopls binary
   end,
 }
