@@ -1,4 +1,4 @@
-# nvimrc
+# Pengu's nvimrc
 
 Pengu's neovim config! As seen on [twitch.tv/pengudev_](https://twitch.tv/pengudev_)
 
