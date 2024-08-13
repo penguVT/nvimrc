@@ -4,6 +4,6 @@
     ./options.nix
     ./keymaps.nix
     ./colorscheme.nix
-    ./plugins/telescope.nix
+    ./plugins
   ];
 }
