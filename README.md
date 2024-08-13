@@ -1,78 +1,36 @@
 # Pengu's nvimrc
 
-Pengu's neovim config! As seen on [twitch.tv/pengudev_](https://twitch.tv/pengudev_)
+Pengu's neovim config! As seen on [twitch.tv/vt_pengu](https://twitch.tv/vt_pengu)
 
 ## About
 
-This is the neovim config I use both on streams and in my daily life. It includes plugins for things such as:
-
-- Live error checking via LSPs ([nvim-lspconfig](https://github.com/neovim/nvim-lspconfig))
-- Programming language integrations for languages like Go ([go.nvim](https://github.com/ray-x/go.nvim))
-- Project navigation via [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) and Netrw
-- Discord RPC / Status ([neocord](https://github.com/IogaMaster/neocord))
-- Gruvbox theming ([gruvbox-material](https://github.com/sainnhe/gruvbox-material))
-
-And more!
+This is the neovim config I use both on streams and in my daily life. It includes several plugins which I consider essential to a good editing experience.
 
 ## Dependencies
 
-If it's your first time using Neovim, I recommend you avoid attempting any steps marked as advanced. 
+I use [NixVim](https://github.com/nix-community/nixvim) to help manage dependencies and installation. This (in theory) means that you do *not* have to worry about what you need to install in order to properly use every component of this configuration to its fullest. However, I have a mild case of skill issue and haven't managed to figure out how to install certain required programs which are needed for some plugins to work properly.
 
-### Basic Dependencies
+Currently, you need to manually install the following programs:
 
-You'll need the following installed on your system to download and begin using my config:
-
-- Neovim (version >= 0.9)
-- Git
-
-On Ubuntu 24.04, you can install Neovim and Git with the following command:
-
-```bash
-sudo apt install neovim git
-```
-
-On Fedora 40, you can install Neovim and Git with the following command:
-
-```bash
-sudo dnf install neovim git
-```
-
-### LSPs (advanced)
-
-This section will be completed later. If you know what you're doing, you need to install the following LSPs:
-
-- `gopls`
-- `rust_analyzer`
+- ripgrep (for Telescope's Live Grep)
 
 ## Installation
 
-### Linux 
+Because I'm using [NixVim](https://github.com/nix-community/nixvim), you need to have the [Nix package manager](https://nixos.org/) installed on your system. There are installation instructions on their website for all UNIX-like systems, including Linux and macOS.
 
-To install my Neovim config, first go to the `$XDG_CONFIG_HOME/nvim` directory:
+Additionally, you must have [flakes](https://wiki.nixos.org/wiki/Flakes) enabled. See the linked guide for details on how to do that for your system / installation.
 
+### Trying the config 
+
+To try my Neovim config without installing it, simply run: 
 ```bash
-mkdir -p $XDG_CONFIG_HOME/nvim
-cd $XDG_CONFIG_HOME/nvim
+nix run github:penguvt/nvimrc# 
 ```
+This will load you into an empty buffer.
 
-Next, create an `init.lua` file and add a single line to it with the following command:
+### Installing the config
 
-```bash
-echo "require('pengu')" >> init.lua
-```
+There will be different installation steps required depending on whether you're running NixOS
+or if you're running Nix by itself.
 
-This tells Neovim to load the configuration inside the `lua/pengu` folder, which we will make shortly.
-
-Next, make the `lua` directory and enter it:
-
-```bash
-mkdir lua && cd lua
-```
-
-Finally, download my config with the following git command:
-
-```bash
-git clone https://github.com/penguNu/nvimrc pengu
-```
-
-**Make sure the folder name is called pengu or the config will not load!**
+This section will be completed later.
