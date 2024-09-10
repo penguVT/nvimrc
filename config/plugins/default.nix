@@ -6,5 +6,6 @@
     ./neocord.nix
     ./conform.nix
     ./autoclose.nix
+    ./glow.nix
   ];
 }
