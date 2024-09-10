@@ -7,5 +7,6 @@
     ./conform.nix
     ./autoclose.nix
     ./glow.nix
+    ./hex.nix
   ];
 }
