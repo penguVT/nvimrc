@@ -5,5 +5,6 @@
     ./neogit.nix
     ./neocord.nix
     ./conform.nix
+    ./autoclose.nix
   ];
 }
