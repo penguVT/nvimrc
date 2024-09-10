@@ -8,5 +8,6 @@
     ./autoclose.nix
     ./glow.nix
     ./hex.nix
+    ./instant.nix
   ];
 }
