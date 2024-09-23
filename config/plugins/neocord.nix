@@ -1,5 +1,5 @@
 {
   plugins.neocord = {
-    enable = true;
+    enable = false;
   };
 }
