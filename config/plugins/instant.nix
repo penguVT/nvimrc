@@ -1,7 +1,7 @@
 # https://github.com/jbyuki/instant.nvim/
 {
   plugins.instant = {
-    enable = true;
+    enable = false;
     settings = {
       username = "pengu";
     };
